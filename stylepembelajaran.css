@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Memungkinkan scroll vertikal */
+}
+
+header {
+    background-color: #8B4513; /* Warna coklat */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 150px); /* Tinggi area slide */
+    overflow: hidden;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.slide {
+    display: none; /* Sembunyikan semua slide secara default */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 100px; /* Margin di kiri dan kanan untuk penempatan teks */
+}
+
+.slide.active {
+    display: block; /* Hanya tampilkan slide yang aktif */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; /* Ukuran tulisan judul soal lebih besar */
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px; /* Ukuran tulisan feedback */
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #8B4513; /* Warna coklat */
+    color: #8B4513; /* Warna coklat */
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    font-size: 18px; /* Ukuran tulisan tombol */
+}
+
+.btn.correct {
+    background-color: green; /* Hijau untuk jawaban benar */
+    color: white;
+}
+
+.btn.wrong {
+    background-color: red; /* Merah untuk jawaban salah */
+    color: white;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-btn {
+    font-size: 40px; /* Ukuran lebih besar */
+    color: #8B4513; /* Warna coklat */
+    cursor: pointer;
+    padding: 20px;
+    user-select: none; /* Menghindari teks yang terpilih */
+}
+
+main {
+    padding-bottom: 60px; /* Memberikan ruang untuk footer */
+}
+
+footer {
+    position: relative; /* Pastikan footer berada di bawah konten */
+    text-align: center;
+    padding: 10px;
+    background-color: #8B4513; /* Warna coklat */
+    color: white;
+}

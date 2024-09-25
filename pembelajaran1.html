@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran 1 - Sosiologi</title>
+    <link rel="stylesheet" href="stylepembelajaran.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" class="home-btn">Home</a>
+            <h1>Pembelajaran 1</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="slides">
+            <!-- Slide Materi -->
+            <div class="slide active">
+                <h2>Materi Pembelajaran Sosiologi</h2>
+                <p><strong>Perubahan Sosial dalam Masyarakat</strong></p>
+                <p>Perubahan sosial merupakan perubahan yang terjadi di dalam struktur dan fungsi masyarakat yang dapat berdampak pada perilaku individu maupun kelompok. Perubahan sosial dapat dipengaruhi oleh berbagai faktor, seperti kontak dengan budaya lain, perkembangan teknologi, perubahan politik, dan perubahan ekonomi.</p>
+                <h3>1. Faktor-Faktor Pendorong Perubahan Sosial</h3>
+                <ul>
+                    <li><strong>Kontak dengan budaya lain</strong>: Saat suatu masyarakat berinteraksi dengan budaya luar, ada kemungkinan terjadinya asimilasi dan akulturasi.</li>
+                    <li><strong>Perkembangan teknologi</strong>: Teknologi memengaruhi cara hidup masyarakat, seperti akses informasi yang lebih mudah.</li>
+                    <li><strong>Perubahan politik</strong>: Pergantian kepemimpinan dapat mengubah struktur sosial dan ekonomi suatu negara.</li>
+                </ul>
+                <h3>2. Bentuk Perubahan Sosial</h3>
+                <ul>
+                    <li><strong>Perubahan kecil vs. besar</strong>: Perubahan kecil biasanya tidak terlalu berpengaruh, sedangkan perubahan besar dapat memengaruhi seluruh aspek kehidupan.</li>
+                    <li><strong>Progres vs. Regress</strong>: Perubahan progres membawa dampak positif, sementara regress membawa dampak negatif.</li>
+                </ul>
+                <h3>3. Asimilasi dan Akulturasi</h3>
+                <ul>
+                    <li><strong>Asimilasi</strong>: Proses peleburan dua budaya menjadi satu budaya baru.</li>
+                    <li><strong>Akulturasi</strong>: Penggabungan unsur budaya asing ke dalam budaya lokal tanpa menghilangkan unsur asli.</li>
+                </ul>
+                <h3>4. Dampak Globalisasi</h3>
+                <ul>
+                    <li><strong>Peluang</strong>: Membuka kesempatan bagi peningkatan investasi dan akses informasi.</li>
+                    <li><strong>Tantangan</strong>: Menimbulkan kesenjangan sosial dan peningkatan kriminalitas.</li>
+                </ul>
+                <h3>5. Pemanasan Global dan Kepedulian Masyarakat</h3>
+                    <li >Masyarakat perlu berperan aktif dalam menjaga kelestarian lingkungan, seperti reboisasi dan penggunaan energi alternatif.</li>
+                    <button class="btn" id="startQuiz">Mulai Quiz</button>
+            </div>
+
+            <!-- Slide Soal Benar atau Salah -->
+            <div class="slide">
+                <h2>Soal 1: Benar atau Salah</h2>
+                <p>Contoh perubahan sosial yang disebabkan oleh masuknya kebudayaan masyarakat lain adalah remaja di berbagai negara membentuk komunitas cosplay melalui jejaring sosial.</p>
+                <div class="button-wrapper">
+                    <button class="btn" onclick="cekJawaban('Benar', this)">Benar</button>
+                    <button class="btn" onclick="cekJawaban('Salah', this)">Salah</button>
+                </div>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="slide">
+                <h2>Soal 2: Benar atau Salah</h2>
+                <p>Proses perubahan sosial dapat dilakukan melalui asimilasi dan akulturasi. Dampak positif akulturasi dan asimilasi dalam perubahan sosial adalah terjadi kemunduran iptek.</p>
+                <button class="btn" onclick="cekJawaban('Benar', this)">Benar</button>
+                <button class="btn" onclick="cekJawaban('Salah', this)">Salah</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="slide">
+                <h2>Soal 3: Benar atau Salah</h2>
+                <p>Faktor pendorong perubahan gaya hidup seperti pada gambar adalah kontak dengan budaya lain.</p>
+                <button class="btn" onclick="cekJawaban('Benar', this)">Benar</button>
+                <button class="btn" onclick="cekJawaban('Salah', this)">Salah</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="slide">
+                <h2>Soal 4: Benar atau Salah</h2>
+                <p>Berdasarkan sisi kemajuan dan kemunduran arahnya, perubahan sosial dibagi menjadi dua yaitu progress dan regress. Perubahan sosial dalam masyarakat dapat bersifat progress apabila membawa dampak negatif bagi masyarakat.</p>
+                <button class="btn" onclick="cekJawaban('Benar', this)">Benar</button>
+                <button class="btn" onclick="cekJawaban('Salah', this)">Salah</button>
+                <p class="feedback"></p>
+            </div>
+
+            <div class="slide">
+                <h2>Soal 5: Benar atau Salah</h2>
+                <p>Jenis perubahan sosial yang tampak pada gambar termasuk perubahan kecil.</p>
+                <button class="btn" onclick="cekJawaban('Benar', this)">Benar</button>
+                <button class="btn" onclick="cekJawaban('Salah', this)">Salah</button>
+                <p class="feedback"></p>
+            </div>
+
+            <!-- Slide Nilai -->
+            <div class="slide">
+                <h2>Nilai Anda</h2>
+                <p id="nilai"></p>
+                <button class="nav-btn" href="pembelajaran1.html"">Ulangi Quiz</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - SMAN 1 Turen</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
