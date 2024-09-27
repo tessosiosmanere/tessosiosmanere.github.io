@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e3;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Memungkinkan scroll vertikal */
+}
+
+header {
+    background-color: #6b4f35; /* Warna coklat */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.home-btn {
+    margin-right: 20px; /* Jarak antara tombol Home dan teks Pembelajaran */
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+h1 {
+    margin: 0;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 150px); /* Tinggi area slide */
+    overflow: hidden;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slide {
+    display: none; /* Sembunyikan semua slide secara default */
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0 100px; /* Margin di kiri dan kanan untuk penempatan teks */
+}
+
+.slide.active {
+    display: block; /* Hanya tampilkan slide yang aktif */
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px; /* Ukuran tulisan judul soal lebih besar */
+}
+
+.feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px; /* Ukuran tulisan feedback */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Mengatur konten card dalam kolom */
+    align-items: center; /* Memusatkan elemen secara horizontal */
+    justify-content: center; /* Memusatkan elemen secara vertikal */
+    padding: 20px; /* Jarak dalam card */
+    border: 1px solid #ccc; /* Gaya border card */
+    border-radius: 10px; /* Sudut melengkung */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    width: 75%;
+    margin: auto;
+}
+
+.button-wrapper {
+    display: flex; /* Menggunakan flexbox untuk tombol */
+    justify-content: center; /* Memusatkan tombol secara horizontal */
+    margin-top: 10px; /* Jarak antara teks dan tombol */
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #8B4513; /* Warna coklat */
+    color: #8B4513; /* Warna coklat */
+    padding: 10px 20px;
+    margin: 0 5px; /* Jarak antar tombol */
+    cursor: pointer;
+    font-size: 18px; /* Ukuran tulisan tombol */
+}
+
+
+.btn.correct {
+    background-color: green; /* Hijau untuk jawaban benar */
+    color: white;
+}
+
+.btn.wrong {
+    background-color: red; /* Merah untuk jawaban salah */
+    color: white;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-btn {
+    font-size: 40px; /* Ukuran lebih besar */
+    color: #8B4513; /* Warna coklat */
+    cursor: pointer;
+    padding: 20px;
+    user-select: none; /* Menghindari teks yang terpilih */
+}
+
+
+main {
+    padding-bottom: 60px; /* Memberikan ruang untuk footer */
+}
+
+footer {
+    position: relative; /* Pastikan footer berada di bawah konten */
+    text-align: center;
+    padding: 10px;
+    background-color: #6b4f35; /* Warna coklat */
+    color: white;
+}
